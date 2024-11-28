@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style29.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+
+</head>
+<body>
+    <a href="index.html" class="logo">Vita</a>
+
+    <div id="container">
+        <div id="bar"></div>
+    </div>
+    <button id="proBtn">+ 10%</button>
+    <script>
+        let progress = 30;
+        const progBar = document.getElementById('bar');
+        const btn = document.getElementById('proBtn');
+
+        btn.addEventListener('click', function () {
+            if (progress < 100) {
+                progress += 10;
+                progBar.style.width = progress + '%';
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style29.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    
+</head>
+<body>
+    <a href="index.html" class="logo">Vita</a>
+    <div class="center-container">
+       <button id="lBtn">
+        TON <span id="spn">0</span>
+    </div>
+    </button>
+
+    <script>
+        let ton = 0;
+        const btn = document.getElementById('lBtn');
+        const Span = document.getElementById('spn');
+
+        btn.addEventListener('click', function () {
+            ton++;
+            Span.textContent = ton;
+        });
+    </script>
+</body>
+</html>

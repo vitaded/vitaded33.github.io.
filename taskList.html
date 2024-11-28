@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style29.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+</head>
+
+<body>
+    <a href="index.html" class="logo">Vita</a>
+    
+    <h1>Список книг</h1>
+    <ul id="bookList">
+        <li class="boolLI">JavaScript for Kids: A Playful Introduction to Programming by Nick Morgan</li>
+        <li class="boolLI">Eloquent JavaScript: A Modern Introduction to Programming by Marijn Haverbeke</li>
+        <li class="boolLI">JavaScript: The Good Parts by Douglas Crockford</li>
+        <li class="boolLI">Programming JavaScript Applications by Eric Elliott</li>
+        <li class="boolLI">Effective JavaScript by David Herman</li>
+        <li class="boolLI">JavaScript: The Definitive Guide by David Flanagan</li>
+        <li class="boolLI">You Don't Know JS by Kyle Simpson</li> 
+    </ul>
+
+    <script>
+        const bookList = document.getElementById('bookList');
+        let selBook = null;
+
+        bookList.addEventListener('click', function(e) {
+            if (e.target.tagName === 'LI') {
+                if (selBook) {
+                    selBook.classList.remove('highlight');
+                }
+                selBook = e.target;
+                selBook.classList.add('highlight');
+            }
+        });
+    </script>
+</body>
+</html>

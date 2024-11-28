@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 1.2rem;
+}
+header {
+    background-color: #030303;
+    padding: 2rem 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+    gap: 24px;
+    margin: auto;
+    max-width: 80%;
+}
+i,
+.crawl {
+    font-size: 14px;
+}
+
+.btn {
+cursor: pointer;
+}
+.btn:hover{
+    color: gold;
+}
+
+#persons {
+    margin:20px auto;
+    max-width: 50%;
+    text-align: center;
+    columns: 2;
+}
+
+p {
+    font-size: 12px;
+}
+
+.starships-show {
+    display: inline-block;
+    width: 250px;
+    margin: 50px auto;
+    cursor: pointer;
+    padding: 15px;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#starships {
+    margin: auto;
+    max-width: 80%;
+}
+
+h5 {
+    margin: 0;
+}
